@@ -80,12 +80,12 @@ dataFinal$activity <- factor(dataFinal$activity
 
 ##### Creating Tidy file #####
 
-data1 <- data.table(dataFinal)
+tidyDat <- data.table(dataFinal)
 tidyDat  %>% group_by(activity, subjetID) %>% summarize_all(mean)
 
 
-data.table::fwrite(x = tidyDat, file = "tidyData.csv", quote = FALSE)
-#rm(list = ls())
+data.table::fwrite(x = tidyDat, file = "tidyData.txt", quote = FALSE, row.names = FALSE)
+rm(list = ls())
 
 
 

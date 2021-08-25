@@ -3,8 +3,8 @@ title: "CodeBook Final Proyect"
 author: "Edgar Manuel Martinez Santana"
 date: "24/8/2021"
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 ---
 
 # Getting and cleaning data Course Proyect
